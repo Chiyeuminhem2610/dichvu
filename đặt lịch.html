@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt Lịch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #50b3a2;
+            color: #ffffff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+
+        header #branding {
+            float: left;
+        }
+
+        header #branding h1 {
+            margin: 0;
+        }
+
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .booking-form {
+            background: #ffffff;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .booking-form input,
+        .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+        }
+
+        .booking-form button {
+            padding: 10px;
+            background: #50b3a2;
+            color: #ffffff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Đặt Lịch Online</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Trang Chủ</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
+                    <li><a href="#">Đặt Lịch</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="booking-form">
+            <h2>Đặt Lịch</h2>
+            <form action="#">
+                <label for="name">Tên:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Số Điện Thoại:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <label for="service">Chọn Dịch Vụ:</label>
+                <select id="service" name="service" required>
+                    <option value="service1">Dịch Vụ 1</option>
+                    <option value="service2">Dịch Vụ 2</option>
+                </select>
+                <label for="date">Chọn Ngày:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Chọn Giờ:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Đặt Lịch</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
